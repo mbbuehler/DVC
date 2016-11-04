@@ -1,22 +1,35 @@
-# DVC
-UZH: Data Visualisation Concepts
+# UZH: Data Visualisation Concepts
 
-Execute \
-$ jupyter notebook \
-or \
-$ ipython notebook \
-
-to start iPython notebook. The solutions for assignment 1 are found in /ex1/Assignment1.ipynb
-
-If there are missing modules, make sure the following modules are available:
+Execution: 
+<ol>
+<li>Start iPython notebook
+$ jupyter notebook or $ ipython notebook
+</li>
 <li>
+In the browser, navigate to the solutions for assignment 1: /ex1/Assignment1.ipynb
+
+Make sure you use python 3 to execute code.
+
+Make sure, at minimum the following modules are available:
+
 <ul>
+<li>
 plotly
-</ul>
+</li>
+<li>
 cufflinks
+</li>
+<li>
 pandas
+</li>
+<li>
 numpy
+</li>
+<li>
 ipywidgets
+</li>
+<li>
 re
 </li>
+</ul>
 
