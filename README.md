@@ -1,5 +1,5 @@
 # UZH: Data Visualisation Concepts
-
+<p>GitHub URL: <a href="https://github.com/mbbuehler/DVC">https://github.com/mbbuehler/DVC</a></p>
 Execution: 
 <ol>
 <li>Start iPython notebook:<br>
