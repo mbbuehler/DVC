@@ -2,11 +2,11 @@
 
 Execution: 
 <ol>
-<li>Start iPython notebook
+<li>Start iPython notebook:<br>
 $ jupyter notebook or $ ipython notebook
 </li>
 <li>
-In the browser, navigate to the solutions for assignment 1: /ex1/Assignment1.ipynb
+In the browser, navigate to the solutions for assignment 1:<br>/ex1/Assignment1.ipynb
 
 Make sure you use python 3 to execute code.
 
