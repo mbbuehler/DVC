@@ -1,6 +1,6 @@
 # UZH: Data Visualisation Concepts
 <p>GitHub URL: <a href="https://github.com/mbbuehler/DVC">https://github.com/mbbuehler/DVC</a></p>
-Execution: 
+<h2>Execution</h2> 
 <ol>
 <li>Start iPython notebook:<br>
 $ jupyter notebook or $ ipython notebook
@@ -12,6 +12,7 @@ In the browser, navigate to the solutions for assignment 1:<br>/ex1/Assignment1.
 </li>
 </ol>
 
+<h2>Dependencies</h2>
 Make sure you use python 3 to execute code with at minimum the following modules available (non-complete list):
 
 <ul>
