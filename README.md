@@ -35,3 +35,4 @@ re
 </li>
 </ul>
 
+<p>IDE used: PyCharm 5.0.5 Professional Edition</p>
