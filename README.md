@@ -39,8 +39,8 @@ re
 
 <h2>Screenshots</h2>
 <h3>Task 1</h3>
-![Alt text](/ex1/screenshots/task1.jpng?raw=true "Task1")
+![Alt text](/ex1/screenshots/task1.png?raw=true "Task1")
 <h3>Task 2</h3>
-![Alt text](/ex1/screenshots/task2.jpng?raw=true "Task2")
+![Alt text](/ex1/screenshots/task2.png?raw=true "Task2")
 <h3>Task 3</h3>
-![Alt text](/ex1/screenshots/task3.jpng?raw=true "Task3")
+![Alt text](/ex1/screenshots/task3.png?raw=true "Task3")
