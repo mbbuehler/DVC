@@ -90,3 +90,6 @@ ENV/
 
 .idea
 .~lock
+*.gz
+*.bin
+data/*
