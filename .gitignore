@@ -92,5 +92,5 @@ ENV/
 .~lock
 *.gz
 *.bin
-data/*
+*/data/*
 *.pickle

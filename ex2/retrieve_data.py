@@ -1,53 +1,47 @@
-import struct
-
 import numpy as np
 import pandas as pd
+from joblib import Parallel, delayed
 
 
-def get_data(path_file, path_out):
-    file = open(path_file, 'rb')
-    data = []
+class RESOURCE:
+    PRESSURE = 'Pf'
+    TEMPERATURE = 'TCf'
 
-    bytes = file.read(4)
-    i = 0
-    # read all bytes from file and add them to a float list (data)
-    while bytes != b"":
-        i += 1
-        if i%1000000 == 0:
-            print(i)
-        try:
-            float = struct.unpack('>f', bytes)[0] # '>f' read as big-endian an float
-            data.append(float)
-            bytes = file.read(4)
-        except:
-            bytes = ""
+# create a 2D dataframe for each height level
+def to_clean_dataframe(matrix, i):
+    print(i)
+    df = pd.DataFrame(matrix).apply(lambda row: row.apply(lambda x: np.nan if x >= pow(10, 35) else x))
+    return i, df
 
-    print('--')
-    print(len(data))
-    # create a 3D tensor from the 1D array data
-    data = np.array(data, dtype=np.dtype(np.float32))
-    tensor = np.reshape(data, (100, 500, 500))
+class DataLoader:
 
-    # create a 2D dataframe for each height level
-    p = {}
-    for i in range(len(tensor)):
-        df = pd.DataFrame(tensor[i])
-        # clean df. values over 10^30 are invalid
-        df = df.apply(lambda row: row.apply(lambda x: np.nan if x > pow(10,30) else x))
+    def __init__(self, resource):
+        self.resource = resource
+        self.base_path = 'ex2/data/'
 
-        p[i] = df
+    def _get_file_path(self, number):
+        if int(number) < 10:
+            number = '0{}'.format(int(number))
+        return '{}{}{}.bin'.format(self.base_path, self.resource, number)
 
-    # save dataframes in a pd.Panel
-    panel = pd.Panel(p)
-    panel.to_pickle(path_out)
-
-    file.close()
+    def get_data(self, number):
+        """
+        constructs pd.Panel with a pd.DataFrame for each height level (100)
+        :param number: int 1 <= number <= 48
+        :return: pd.Panel
+        """
+        path_file = self._get_file_path(number)
+        data = np.fromfile(path_file, dtype='>f')
+        tensor = np.reshape(data, (100, 500, 500))
+        list_tuples = Parallel(n_jobs=4)(delayed(to_clean_dataframe)(tensor[i], i) for i in range(len(tensor)))
+        panel = pd.Panel(dict(list_tuples))
+        return panel
 
 
-path_file = 'ex2/data/TCf01.bin'
-path_out = 'ex2/data/TCf01.pickle'
-# get_data(path_file)$
+def f(x,i):
+    return i, pd.DataFrame({'test': [x*2]})
 
-a = np.array([1,2,3,4,5,6,7,8,9])
-s = np.reshape(a, (3,3))
-get_data(path_file, path_out)
+if __name__ == '__main__':
+    loader = DataLoader(RESOURCE.TEMPERATURE)
+    panel = loader.get_data(1)
+
