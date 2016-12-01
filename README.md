@@ -43,7 +43,8 @@ joblib
 
 <h2>Thank you</h2>
 <p>Thank you to Bill Kuo, Wei Wang, Cindy Bruyere, Tim Scheitlin, and Don Middleton of the U.S. National Center for Atmospheric Research (NCAR) and the U.S. National Science Foundation (NSF) for providing the Weather Research and Forecasting (WRF) Model simulation data of Hurricane Isabel. </p>
-<p>Data source: <a href="http://vis.computer.org/vis2004contest/data.html" title="VIS">VIS</a></p>
+<p>Data source: <a href="http://vis.computer.org/vis2004contest/data.html" title="VIS">VIS</a>
+<br>For executing task 2, please download all data files starting with "Pf" and "TCf" from <a href="http://www.vets.ucar.edu/vg/isabeldata/" title="Hurricane Isabel Data">here</a> and unzip them to a sub-folder "data".</p>
 
 <h2>Screenshots Assignment 1</h2>
 <h3>Task 1</h3>

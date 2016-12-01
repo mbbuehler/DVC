@@ -1,7 +1,7 @@
 
 import plotly.graph_objs as go
 import plotly
-from ex2.retrieve_data import DataLoader, RESOURCE
+from retrieve_data import DataLoader, RESOURCE
 
 class Task2:
     def __init__(self):
@@ -43,7 +43,3 @@ class Task2:
 
         fig = go.Figure(data=data, layout=layout)
         plotly.offline.iplot(fig)
-
-if __name__ == '__main__':
-    task2 = Task2()
-    task2.render(1, 1)

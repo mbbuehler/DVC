@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.graph_objs as go
 import plotly
-from ex2.retrieve_data import RESOURCE, TimeSeriesLoader
+from retrieve_data import RESOURCE, TimeSeriesLoader
 
 
 class Task3:
@@ -46,7 +46,3 @@ class Task3:
         fig['layout']['yaxis2'].update(title='Pascals')
 
         plotly.offline.iplot(fig)
-
-if __name__ == '__main__':
-    task3 = Task3()
-    task3._get_df(100, 100, 50)

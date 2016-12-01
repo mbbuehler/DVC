@@ -94,3 +94,4 @@ ENV/
 *.bin
 */data/*
 *.pickle
+plotly_python_cheat_sheet.pdf
