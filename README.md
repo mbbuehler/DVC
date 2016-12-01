@@ -6,7 +6,7 @@
 $ jupyter notebook or $ ipython notebook
 </li>
 <li>
-In the browser, navigate to the solutions:<br>Assignment 1: /ex1/Assignment1.ipynb<br>Assignment 2: /ex1/Assignment1.ipynb
+In the browser, navigate to the solutions:<br>Assignment 1: /ex1/Assignment1.ipynb<br>Assignment 2: /ex2/Assignment2.ipynb
 </li>
 <li>After opening the notebook, click "Cell"->"Run All". Without this step, the interactive elements will not be displayed.
 </li>
@@ -51,8 +51,8 @@ joblib
 
 <h2>Screenshots Assignment 2</h2>
 <h3>Task 1</h3>
-![Alt text](/ex1/screenshots/task1_temperature.png?raw=true "Task1")
+![Alt text](/ex2/screenshots/task1_temperature.png?raw=true "Task1")
 <h3>Task 2</h3>
-![Alt text](/ex1/screenshots/task2_pressure.png?raw=true "Task2")
+![Alt text](/ex2/screenshots/task2_pressure.png?raw=true "Task2")
 <h3>Task 3</h3>
-![Alt text](/ex1/screenshots/task3_timeseries.png?raw=true "Task3")
+![Alt text](/ex2/screenshots/task3_timeseries.png?raw=true "Task3")
