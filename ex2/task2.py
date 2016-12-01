@@ -24,15 +24,15 @@ class Task2:
 
         df = self._get_df(time, height)
         trace = go.Contour(
-            z=df.loc[:500, :500].values,
-            colorbar=ColorBar(
+            z=df.values,
+            colorbar=go.ColorBar(
                 title='Pressure'
                 ),
             )
         data = [trace]
 
         layout = go.Layout(
-            title='Pressure for t=01 and Altitude (z={}): {:.1f} km'.format(height, height*0.2),
+            title='Pressure for t={} and Altitude (z={}): {:.1f} km'.format(str(time).lstrip('0'), height, height*0.2),
             xaxis = dict(
                 title='Longitude'
             ),

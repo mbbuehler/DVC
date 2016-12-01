@@ -1,6 +1,5 @@
 import plotly.graph_objs as go
 import plotly
-import sys
 from ex2.retrieve_data import DataLoader, RESOURCE
 
 class Task1:
@@ -12,9 +11,7 @@ class Task1:
         if self.data[time] != -1:
             return self.data[time]
         else:
-            sys.stdout.write('Loading...')
             self.data[time] = self.loader.get_data(time)
-            print(' Done')
             return self.data[time]
 
     def _get_df(self, time, height):
@@ -26,15 +23,15 @@ class Task1:
 
         df = self._get_df(time, height)
         trace = go.Contour(
-            z=df.loc[:500, :500].values,
-            colorbar=ColorBar(
+            z=df.values,
+            colorbar=go.ColorBar(
                 title='Temperature'
                 ),
             )
         data = [trace]
 
         layout = go.Layout(
-            title='Temperatur for t=01 and Altitude (z={}): {:.1f} km'.format(height, height*0.2),
+            title='Temperatur for t={} and Altitude (z={}): {:.1f} km'.format(str(time).lstrip('0'), height, height*0.2),
             xaxis = dict(
                 title='Longitude'
             ),
