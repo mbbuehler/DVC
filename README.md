@@ -13,7 +13,7 @@ In the browser, navigate to the solutions:<br>Assignment 1: /ex1/Assignment1.ipy
 </ol>
 
 <h2>Dependencies</h2>
-Make sure you use python 3 to execute code with at minimum the following modules available (non-complete list):
+<p>Make sure you use python 3 to execute code with at minimum the following modules available (non-complete list):</p>
 
 <ul>
 <li>
@@ -42,8 +42,8 @@ joblib
 <p>IDE used: PyCharm 5.0.5 Professional Edition</p>
 
 <h2>Thank you</h2>
-Thank you to Bill Kuo, Wei Wang, Cindy Bruyere, Tim Scheitlin, and Don Middleton of the U.S. National Center for Atmospheric Research (NCAR) and the U.S. National Science Foundation (NSF) for providing the Weather Research and Forecasting (WRF) Model simulation data of Hurricane Isabel. 
-Data source: <a href="http://vis.computer.org/vis2004contest/data.html" title="VIS">VIS</a>
+<p>Thank you to Bill Kuo, Wei Wang, Cindy Bruyere, Tim Scheitlin, and Don Middleton of the U.S. National Center for Atmospheric Research (NCAR) and the U.S. National Science Foundation (NSF) for providing the Weather Research and Forecasting (WRF) Model simulation data of Hurricane Isabel. </p>
+<p>Data source: <a href="http://vis.computer.org/vis2004contest/data.html" title="VIS">VIS</a></p>
 
 <h2>Screenshots Assignment 1</h2>
 <h3>Task 1</h3>
