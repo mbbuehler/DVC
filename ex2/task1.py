@@ -25,7 +25,7 @@ class Task1:
         trace = go.Contour(
             z=df.values,
             colorbar=go.ColorBar(
-                title='Temperature'
+                title='Degree Celcius'
                 ),
             )
         data = [trace]

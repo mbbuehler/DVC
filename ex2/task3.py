@@ -45,7 +45,7 @@ class Task3:
         fig['layout']['yaxis1'].update(title='Degree Celsius')
         fig['layout']['yaxis2'].update(title='Pascals')
 
-        plotly.offline.iplot(fig, filename='exports/task3')
+        plotly.offline.iplot(fig)
 
 if __name__ == '__main__':
     task3 = Task3()
