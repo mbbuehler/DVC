@@ -1,4 +1,5 @@
 # UZH: Data Visualisation Concepts
+<p>Data visualisation examples using plotly (https://plot.ly/)</p>
 <p>GitHub URL: <a href="https://github.com/mbbuehler/DVC">https://github.com/mbbuehler/DVC</a></p>
 <h2>Execution</h2> 
 <ol>
