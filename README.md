@@ -49,16 +49,27 @@ joblib
 
 <h2>Screenshots Assignment 1</h2>
 <h3>Task 1</h3>
+
 ![Alt text](/ex1/screenshots/task1.png?raw=true "Task1")
+
 <h3>Task 2</h3>
+
 ![Alt text](/ex1/screenshots/task2.png?raw=true "Task2")
+
 <h3>Task 3</h3>
+
 ![Alt text](/ex1/screenshots/task3.png?raw=true "Task3")
 
 <h2>Screenshots Assignment 2</h2>
+
 <h3>Task 1</h3>
+
 ![Alt text](/ex2/screenshots/task1_temperature.png?raw=true "Task1")
+
 <h3>Task 2</h3>
+
 ![Alt text](/ex2/screenshots/task2_pressure.png?raw=true "Task2")
+
 <h3>Task 3</h3>
+
 ![Alt text](/ex2/screenshots/task3_timeseries.png?raw=true "Task3")
